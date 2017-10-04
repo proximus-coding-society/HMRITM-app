@@ -1,3 +1,15 @@
 page-login {
+    ion-content {
+        background: url('https://unsplash.it/g/360/640');
+        background-repeat: no-repeat;
+    }
 
+    .item-block {
+        background: transparent;
+    }
+
+    ::-webkit-input-placeholder {
+        color: white !important; 
+    }
+    
 }
