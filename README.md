@@ -1,30 +1,72 @@
-<<<<<<< HEAD
-# HMRITM-app
-=======
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+__<h1>HMRITM APP</h1>__
+---
+__<h2>SYNOPSIS</h2>__
 
-## How to use this template
+_Whether it's a simple __checkmark__ next to the name, a verbal attendence or just lots of worries of whether the teacher listened my __'present ma'am'__ or not -- it's got to be done everyday -- even every lecture. Confused about the day-to-day __schedule__ of fresher's party to fest, sessionals to finals, VAPS to summer training. Or just swiping your phone gallery to find the __assignment__ posted last month in the class group._
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+__It's lot to keep a track of -- but not to worry. With the advancement in technology__ _(without what the heck we can think off)_ __our app will help to reduce teacher's as well as student's effort.__
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+***
+__<h2>LICENSE</H2>__
+Public Domain
 
-### With the Ionic CLI:
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+***
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+__<h2> FEATURES</h2>__
 
-Then, to run it, cd into `myBlank` and run:
+* [Multiple login systems]()
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+    * _By Student_
+    * _By Teacher_
 
-Substitute ios for android if not on a Mac.
+* [Timetable](#TIMETABLE)
+* [Notice](#NOTICE)
+* [Planner](#PLANNER)
+* [Attendence Record](#ATTENDENCE-RECORD)
+* [Assignment](#assignment)
+* [College Contact](#COLLEGE-CONTACT)
 
->>>>>>> Initial commit
+***
+__<h2>REQUIREMENTS</h2>__
+The project we proposed `HMRITM APP` has a suite of selective modules specifically tailored to the requirements of students and teachers. It is engineered and designed considering range of management functions needed within the college. Almost all departments within a baisc need (e. g. attendence, notices, time table etc) can be synchronized and accessed.
+*** 
+__<h2>ARCHITECTURE</h2>__
+
+Both the iOS and Android versions of our app follow approximately the same underlying structure for storing and associating data. At the heart of the application is a series of interrelated classes (each of which also happens to correspond with a table in a database).
+
+* __Ionic 3__ for Moblie Frontend
+* __Firebase__ for Backend 
+* __Django__
+***
+__<h2>INSTALLATION</h2>__
+ Tell other users how to install your project locally. Optionally, include a flowchart to make the process even more clear for other people.
+ ***
+__<h2>TIMETABLE</h2>__
+Displays class-wise timetable
+
+***
+__<h2>NOTICE</h2>__
+Displays notice in chronological order of dates, irrespective of branch. 
+***
+__<h2>PLANNER</h2>__
+Displays the academic calender scheduled by HMRITM, highlighting the special events, holidays, commencements of exams etc. 
+***
+__<h2>ATTENDENCE RECORD</h2>__
+***
+__<h2>ASSIGNMENT</h2>__
+***
+__<h2>COLLEGE CONTACT</h2>__
+Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
+***
+__<h2>SCREENSHOTS</h2>__
+[screenshot folder] {later}
+***
+
+
+
+
+
+
+
+
