@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-title {
+    color: white;
+}
+
+.toolbar-background {
+    background-color: map-get($colors, 'dark');
+}
+
+.card-header {
+    color: map-get($colors, 'dark');
+}
+
+.back-button {
+    color: white;
+}
+
+.bar-buttons {
+    color: white;
+}
+
+.refresher-refreshing .spinner-ios line, .refresher-refreshing .spinner-ios-small line, .refresher-refreshing .spinner-crescent circle {
+    stroke: map-get($colors, 'dark');
+}
+
+.disable-hover.button.button-default.button-block {
+    background: map-get($colors, 'dark')
+}
