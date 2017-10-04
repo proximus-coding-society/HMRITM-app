@@ -11,8 +11,8 @@ export class IntroSliderPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroSliderPage');
+  openLoginPage() {
+    this.navCtrl.setRoot('LoginPage');
   }
 
 }
