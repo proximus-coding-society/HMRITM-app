@@ -18,37 +18,47 @@ __<h2> FEATURES</h2>__
 
 * Multiple login systems
 
-    * By Student
-    * By Teacher
+    * _By Student_
+    * _By Teacher_
 
 *  [Timetable](#TIMETABLE)
 * [Notice](#NOTICE)
 * [Planner](#PLANNER)
-* [Attendence Record] 
-* Assignment
-* College Contact
+* [Attendence Record](#ATTENDENCE RECORD)
+* [Assignment] (#ASSIGNMENT)
+* [College Contact] (#COLLEGE CONTACT)
 
 ***
+__<h2>REQUIREMENTS</h2>__
+The project we proposed `HMRITM APP` has a suite of selective modules specifically tailored to the requirements of students and teachers. It is engineered and designed considering range of management functions needed within the college. Almost all departments within a baisc need (e. g. attendence, notices, time table etc) can be synchronized and accessed.
+*** 
 __<h2>ARCHITECTURE</h2>__
 
 Both the iOS and Android versions of our app follow approximately the same underlying structure for storing and associating data. At the heart of the application is a series of interrelated classes (each of which also happens to correspond with a table in a database).
 
 * __Ionic 3__ for Moblie Frontend
-* __Firebase__ for Backend
+* __Firebase__ for Backend 
 * __Django__
 ***
 __<h2>TIMETABLE</h2>__
+Displays class-wise timetable
+
 ***
 __<h2>NOTICE</h2>__
-GVGHVGH
+Displays notice in chronological order of dates, irrespective of branch. 
 ***
 __<h2>PLANNER</h2>__
+Displays the academic calender scheduled by HMRITM, highlighting the special events, holidays, commencements of exams etc. 
 ***
 __<h2>ATTENDENCE RECORD</h2>__
 ***
 __<h2>ASSIGNMENT</h2>__
 ***
 __<h2>COLLEGE CONTACT</h2>__
+Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
+***
+__<h2>SCREENSHOTS</h2>__
+[screenshot folder] {later}
 ***
 
 
