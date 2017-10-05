@@ -20,11 +20,11 @@
 }
 
 .toolbar-background {
-    background-color: map-get($colors, 'dark');
+    background-color: map-get($colors, 'primary');
 }
 
 .card-header {
-    color: map-get($colors, 'dark');
+    color: map-get($colors, 'primary');
 }
 
 .back-button {
@@ -36,9 +36,9 @@
 }
 
 .refresher-refreshing .spinner-ios line, .refresher-refreshing .spinner-ios-small line, .refresher-refreshing .spinner-crescent circle {
-    stroke: map-get($colors, 'dark');
+    stroke: map-get($colors, 'primary');
 }
 
 .disable-hover.button.button-default.button-block {
-    background: map-get($colors, 'dark')
+    background: map-get($colors, 'primary')
 }
