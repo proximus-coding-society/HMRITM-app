@@ -32,7 +32,13 @@ export class LoginAuthenticatorProvider {
   }
 
   login(newEmail: string, newPassword: string){
-    return this.afAuthService.auth.signInWithEmailAndPassword(newEmail, newPassword);
+    // Mocking login here
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(true);
+      }, 500);
+    });
+    // return this.afAuthService.auth.signInWithEmailAndPassword(newEmail, newPassword);
   }
 
   resetPassword(email: string) {
