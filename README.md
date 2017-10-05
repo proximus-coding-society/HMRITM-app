@@ -38,10 +38,16 @@ Both the iOS and Android versions of our app follow approximately the same under
 * __Ionic 3__ for Moblie Frontend
 * __Firebase__ for Backend 
 * __Django__
+
+***
+__<h2>PROGRESS</h2>__
+    We are still deciding the database schema for the application, frontend work will finish in one and a half day as soon as we finish mocking up data and making relationships.
+***
+
 ***
 __<h2>INSTALLATION</h2>__
  Tell other users how to install your project locally. Optionally, include a flowchart to make the process even more clear for other people.
- ***
+***
 __<h2>TIMETABLE</h2>__
 Displays class-wise timetable
 
