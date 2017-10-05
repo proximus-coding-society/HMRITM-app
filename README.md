@@ -46,9 +46,9 @@ __<h2>PROGRESS</h2>__
 
 ***
 __<h2>INSTALLATION</h2>__
-• Run '''npm install''' into the project directory to install dependencies
-• Run '''ionic cordova platform add android''' to add android platform dependencies
-• Finally, run '''ionic cordova run android --prod''' to build and run the app for android (NOTE: android sdk must be configured for this)
+• Run ```npm install``` into the project directory to install dependencies
+• Run ```ionic cordova platform add android``` to add android platform dependencies
+• Finally, ```run ionic cordova run android --prod``` to build and run the app for android (NOTE: android sdk must be configured for this)
 ***
 __<h2>TIMETABLE</h2>__
 Displays class-wise timetable
