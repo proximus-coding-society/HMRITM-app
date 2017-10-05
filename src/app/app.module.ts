@@ -9,6 +9,7 @@ import { FIREBASE_CONFIG } from './firebase.config';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule }  from 'angularfire2/database';
+import { AngularFirestore } from "angularfire2/firestore";
 
 // Providers
 import { LoginAuthenticatorProvider } from "./../providers/login-authenticator/login-authenticator";
@@ -21,7 +22,9 @@ import { MyApp } from './app.component';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      pageTransition: 'ios-transition'
+    }),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
     AngularFireDatabaseModule
