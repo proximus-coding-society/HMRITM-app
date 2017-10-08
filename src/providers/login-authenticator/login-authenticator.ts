@@ -5,12 +5,23 @@ import firebase from "firebase/app";
 
 import { StudentSignupModel } from '../../models/user.models';
 
+class Teacher {
+  name: string;
+  uid?: string;
+  subjects: number[];
+
+  constructor(name: string, uid: string, subjects: number[]) {
+    this.name = name;
+    this.uid = uid;
+    this.subjects = subjects;
+  }
+}
+
 @Injectable()
 export class LoginAuthenticatorProvider {
 
   constructor(public afAuthService: AngularFireAuth,
-              public afDbService: AngularFireDatabase) {
-    console.log('Hello LoginAuthenticatorProvider Provider');
+              public afDbService: AngularFireDatabase) { 
   }
 
   signup(details: StudentSignupModel) {
@@ -33,12 +44,12 @@ export class LoginAuthenticatorProvider {
 
   login(newEmail: string, newPassword: string){
     // Mocking login here
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(true);
-      }, 500);
-    });
-    // return this.afAuthService.auth.signInWithEmailAndPassword(newEmail, newPassword);
+    // return new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     resolve(true);
+    //   }, 500);
+    // });
+    return this.afAuthService.auth.signInWithEmailAndPassword('a@b.com', '12345678');
   }
 
   resetPassword(email: string) {

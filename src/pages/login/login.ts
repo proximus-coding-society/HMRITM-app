@@ -17,6 +17,7 @@ export class LoginPage {
               public navParams: NavParams,
               public loadingCtrl: LoadingController,
               public loginAuth: LoginAuthenticatorProvider) {
+    // this.login();
   }
 
   login() {

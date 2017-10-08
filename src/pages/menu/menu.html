@@ -1,13 +1,12 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <!--<ion-title>Menu</ion-title>-->
       <ion-item color="primary" no-lines>
         <h2 style="font-style: italic;">Hello user!</h2>
       </ion-item>
     </ion-toolbar>
   </ion-header>
- 
+
   <ion-content>
     <ion-list no-lines>
       <button menuClose ion-item *ngFor="let page of pages" (click)="page.handler()">
@@ -15,8 +14,7 @@
         {{ page.title }}
       </button>
     </ion-list>
-  </ion-content>
- 
+  </ion-content> 
 </ion-menu>
- 
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+<ion-nav [root]="rootPage" [rootParams]="navParams.data" #content swipeBackEnabled="false"></ion-nav>
