@@ -7,3 +7,9 @@ export class StudentSignupModel {
     enrollment_no?: string;
     class: string;
 };
+
+export class Teacher {
+    name: string;
+    email: string;
+    subjects: number[];
+}
