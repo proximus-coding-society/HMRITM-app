@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { AccordionComponent } from './accordion/accordion';
-import { IonicModule } from 'ionic-angular';
+import { IonicModule, IonicPageModule } from 'ionic-angular';
 @NgModule({
 	declarations: [AccordionComponent],
 	imports: [
-		IonicModule.forRoot(AccordionComponent)
+		IonicPageModule.forChild(AccordionComponent)
 	],
 	exports: [AccordionComponent]
 })
