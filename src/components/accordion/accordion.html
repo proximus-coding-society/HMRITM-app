@@ -1,10 +1,11 @@
 <ion-card>
   <ion-card-header (click)="toggleAccordion()" [style.background]="color_in">
     {{ title_in }}
-    <ion-icon *ngIf="!accordionExpanded" name="arrow-forward" color="secondary"></ion-icon>
-    <ion-icon *ngIf="accordionExpanded" name="arrow-down" color="secondary"></ion-icon>
   </ion-card-header>
   <ion-card-content #cc>
     <ng-content></ng-content>
   </ion-card-content>
 </ion-card>
+<!-- <div style="font-style: italic;" *ngIf="!accordionExpanded_in">
+  // click above to slide down
+</div> -->
