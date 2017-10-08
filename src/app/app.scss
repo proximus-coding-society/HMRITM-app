@@ -35,9 +35,9 @@
     color: white;
 }
 
-.refresher-refreshing .spinner-ios line, .refresher-refreshing .spinner-ios-small line, .refresher-refreshing .spinner-crescent circle {
-    stroke: map-get($colors, 'primary');
-}
+// .refresher-refreshing .spinner-ios line, .refresher-refreshing .spinner-ios-small line, .refresher-refreshing .spinner-crescent circle {
+//     stroke: map-get($colors, 'primary');
+// }
 
 .disable-hover.button.button-default.button-block {
     background: map-get($colors, 'primary')
