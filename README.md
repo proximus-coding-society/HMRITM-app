@@ -66,7 +66,7 @@ displays subject-wise assignment along with their deadlines.
 __<h2>COLLEGE CONTACT</h2>__
 Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
 ***
-__<h4>FOR MORE DETAILED AND INTERESTING DETAIL.. PLEASE VISIT THIS INTERACTIVE LINK<h4>__
+__<h4>FOR MORE DETAILED AND INTERESTING INFORMATION.. PLEASE VISIT THIS INTERACTIVE LINK<h4>__
 https://drive.google.com/open?id=0B_DXTvuuVV_aeHVwNHBfTzlfWFk
 ***
 __<h2>SCREENSHOTS</h2>__
