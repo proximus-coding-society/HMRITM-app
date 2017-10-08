@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -14,7 +14,7 @@ export class TabsPage {
     icon: string;
   }>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navParams: NavParams) {
     this.tabs = [
       {
         title: 'Home',
@@ -27,10 +27,6 @@ export class TabsPage {
         icon: 'construct'
       }
     ];
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
   }
 
 }
