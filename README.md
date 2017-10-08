@@ -51,7 +51,7 @@ __<h2>INSTALLATION</h2>__
 • Finally, ```run ionic cordova run android --prod``` to build and run the app for android (NOTE: android sdk must be configured for this)<br>
 ***
 __<h2>TIMETABLE</h2>__
-Displays class-wise timetable
+Displays class-wise timetable.
 
 ***
 __<h2>NOTICE</h2>__
@@ -61,8 +61,10 @@ __<h2>PLANNER</h2>__
 Displays the academic calender scheduled by HMRITM, highlighting the special events, holidays, commencements of exams etc. 
 ***
 __<h2>ATTENDENCE RECORD</h2>__
+Displays the attendence as well as its analysis which will aware students to maintain and decide which subject to bunk and which to attend. Teacher will also be benefitted which we will disclose later. 
 ***
 __<h2>ASSIGNMENT</h2>__
+displays subject-wise assignment along with their deadlines.
 ***
 __<h2>COLLEGE CONTACT</h2>__
 Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
