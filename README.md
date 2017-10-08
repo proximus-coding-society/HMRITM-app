@@ -10,7 +10,6 @@ __It's lot to keep a track of -- but not to worry. With the advancement in techn
 __<h2>LICENSE</H2>__
 Public Domain
 
-
 ***
 
 __<h2> FEATURES</h2>__
@@ -23,9 +22,9 @@ __<h2> FEATURES</h2>__
 * [Timetable](#TIMETABLE)
 * [Notice](#NOTICE)
 * [Planner](#PLANNER)
-* [Attendence Record](#ATTENDENCE-RECORD)
-* [Assignment](#assignment)
-* [College Contact](#COLLEGE-CONTACT)
+* [Attendence Record](#ATTENDENCE RECORD)
+* [Assignment](#ASSIGNMENT)
+* [College Contact](#COLLEGE CONTACT)
 
 ***
 __<h2>REQUIREMENTS</h2>__
@@ -43,8 +42,6 @@ Both the iOS and Android versions of our app follow approximately the same under
 __<h2>PROGRESS</h2>__
     We are still deciding the database schema for the application, frontend work will finish in one and a half day as soon as we finish mocking up data and making relationships.
 ***
-
-***
 __<h2>INSTALLATION</h2>__
 • Run ```npm install``` into the project directory to install dependencies<br>
 • Run ```ionic cordova platform add android``` to add android platform dependencies<br>
@@ -61,7 +58,7 @@ __<h2>PLANNER</h2>__
 Displays the academic calender scheduled by HMRITM, highlighting the special events, holidays, commencements of exams etc. 
 ***
 __<h2>ATTENDENCE RECORD</h2>__
-Displays the attendence as well as its analysis which will aware students to maintain and decide which subject to bunk and which to attend. Teacher will also be benefitted which we will disclose later. 
+Displays the attendence as well as its analysis which will aware students to maintain and decide which subject to bunk and which to attend. In the teacher app module, their will be face recognition based attendance using AWS rekognition api.
 ***
 __<h2>ASSIGNMENT</h2>__
 displays subject-wise assignment along with their deadlines.
@@ -70,13 +67,24 @@ __<h2>COLLEGE CONTACT</h2>__
 Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
 ***
 __<h2>SCREENSHOTS</h2>__
-[screenshot folder] {later}
+Time Table:
+
+[![https://gyazo.com/1809447849feb83f576d1f5e73f72087](https://i.gyazo.com/1809447849feb83f576d1f5e73f72087.gif)](https://gyazo.com/1809447849feb83f576d1f5e73f72087)
+
+Attendance chart student:
+
+[![https://gyazo.com/b01f69573f46014a43c92bdd106b6c81](https://i.gyazo.com/b01f69573f46014a43c92bdd106b6c81.gif)](https://gyazo.com/b01f69573f46014a43c92bdd106b6c81)
+
+Intro slider:
+
+[![https://gyazo.com/853b3b654235e2f62fa1f2ea5f4f64c7](https://i.gyazo.com/853b3b654235e2f62fa1f2ea5f4f64c7.gif)](https://gyazo.com/853b3b654235e2f62fa1f2ea5f4f64c7)
+
+Login page:
+
+[![https://gyazo.com/ab1e7234613dc055e61d656b55035694](https://i.gyazo.com/ab1e7234613dc055e61d656b55035694.gif)](https://gyazo.com/ab1e7234613dc055e61d656b55035694)
+
 ***
 
-
-
-
-
-
-
-
+__<h4>PS:</h4>__
+Due to some technical problems in our main system android studio didn't work hence we couldn't build the apk. Sorry for inconvenience.
+We shall continue to the work to the project after the hackathon shifting the backend to django and actually starting the services stated by us.
