@@ -9,12 +9,13 @@ import { FIREBASE_CONFIG } from './firebase.config';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule }  from 'angularfire2/database';
-import { AngularFirestore } from "angularfire2/firestore";
 
 // Providers
 import { LoginAuthenticatorProvider } from "./../providers/login-authenticator/login-authenticator";
 
 import { MyApp } from './app.component';
+import { ComponentsModule } from '../components/components.module';
+import { DateTimeProvider } from '../providers/date-time/date-time';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MyApp } from './app.component';
     }),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +39,8 @@ import { MyApp } from './app.component';
     StatusBar,
     SplashScreen,
     LoginAuthenticatorProvider,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DateTimeProvider
   ]
 })
 export class AppModule {}
