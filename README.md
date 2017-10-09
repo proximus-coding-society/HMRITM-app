@@ -22,9 +22,9 @@ __<h2> FEATURES</h2>__
 * [Timetable](#TIMETABLE)
 * [Notice](#NOTICE)
 * [Planner](#PLANNER)
-* [Attendence Record](#ATTENDENCE RECORD)
+* [Attendence Record](#ATTENDENCE-RECORD)
 * [Assignment](#ASSIGNMENT)
-* [College Contact](#COLLEGE CONTACT)
+* [College Contact](#COLLEGE-CONTACT)
 
 ***
 __<h2>REQUIREMENTS</h2>__
