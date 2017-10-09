@@ -36,39 +36,137 @@ Both the iOS and Android versions of our app follow approximately the same under
 
 * __Ionic 3__ for Moblie Frontend
 * __Firebase__ for Backend 
-* __Django__
 
 ***
-__<h2>PROGRESS</h2>__
-    We are still deciding the database schema for the application, frontend work will finish in one and a half day as soon as we finish mocking up data and making relationships.
+__<h2>Code snippets explanation</h2>__
+<h6>Charts.js usage in attendance.ts : </h6>
+• Getting reference to the the canvas element in the template to render the chart
+
+```typescript
+@ViewChild('barCanvas') barCanvas;
+```
+
+• Initializing class member ```barChart``` to new chart object:
+
+```typescript
+this.barChart = new Chart(this.barCanvas.nativeElement, {
+
+    type: 'bar',
+    data: {
+        labels: this.navParams.data.user.data.subjects,
+        datasets: [{
+            label: '# of attendance',
+            data: this.navParams.data.user.data.attendance,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 0.8
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+
+});
+```
+```type``` property describes the type of chart i.e. ```bar```, ```doughnut```, ```line```.<br>
+```labels``` property under ```datasets``` contains small label in the chart.<br>
+```data``` property under ```datasets``` contains a list of values of bars to be shown in the chart.<br>
+```backgroundColor``` property defines a list of the background color of each bar in the chart.<br>
+```borderWidth, borderColor``` properties define width of the border of bars in the chart in inches and a list of border colors of the bars respective to the ```data``` list respectively.<br>
+
+<h6>Custom ionic component made by us (accordion) : </h6>
+• Decorators defined
+
+```typescript
+@Input('expanded') accordionExpanded_in: any;
+@Input('title') title_in: string;
+@Input('color') color_in: string;
+@ViewChild("cc") cardContent: any;
+```
+
+```Input``` decorator enables the custom component to take input data through a directive in angular.
+```ViewChild``` decorator enables to capture a reference to DOM element in angular
+For more about angular decorators, visit https://angular.io/guide/attribute-directives
+
+• Dependency injection in angular
+
+```typescript
+constructor(public renderer: Renderer) {}
+```
+
+We are here, almost everywhere in ionic using this *dependency injection* which makes the parameter of constructor to act as class members if prefixed by an access specifier.
+
+```Renderer``` is class provided in angular/core module to set different styles to DOM elements / change their properties dynamically easily the angular way.
+
+• Updating state change of properties in DOM
+
+```typescript
+this.renderer.setElementStyle(this.cardContent.nativeElement, "webkitTransition", "max-height 100ms, padding 100ms");
+```
+
+The method ```setElementStyle``` takes the native DOM element as first argument, styleName as second i.e. a transition here and style value as third which is a 100 ms slowdown on both *css* properties ```max-height``` and ```padding```.
+
 ***
 __<h2>INSTALLATION</h2>__
+
 • Run ```npm install``` into the project directory to install dependencies<br>
 • Run ```ionic cordova platform add android``` to add android platform dependencies<br>
 • Finally, ```run ionic cordova run android --prod``` to build and run the app for android (NOTE: android sdk must be configured for this)<br>
+
 ***
+
 __<h2>TIMETABLE</h2>__
 Displays class-wise timetable.
 
 ***
+
 __<h2>NOTICE</h2>__
 Displays notice in chronological order of dates, irrespective of branch. 
+
 ***
+
 __<h2>PLANNER</h2>__
 Displays the academic calender scheduled by HMRITM, highlighting the special events, holidays, commencements of exams etc. 
+
 ***
+
 __<h2>ATTENDENCE RECORD</h2>__
 Displays the attendence as well as its analysis which will aware students to maintain and decide which subject to bunk and which to attend. In the teacher app module, their will be face recognition based attendance using AWS rekognition api.
+
 ***
+
 __<h2>ASSIGNMENT</h2>__
-displays subject-wise assignment along with their deadlines.
+Displays subject-wise assignment along with their deadlines.
+
 ***
+
 __<h2>COLLEGE CONTACT</h2>__
-Displays the name and __phone number__ of the college committee. Students can __contact__ the committee member for any __problem__.
+
+Displays the name and *phone number* of the college committee. Students can *contact* the committee member for any *problem*.
+
 ***
+
 __<h4>FOR MORE DETAILED AND INTERESTING INFORMATION.. PLEASE VISIT THIS INTERACTIVE LINK<h4>__
-https://drive.google.com/open?id=0B_DXTvuuVV_aeHVwNHBfTzlfWFk
+https://drive.google.com/file/d/0B0olzwYcu7mHWTBLdU1MekhjcUU/view?usp=sharing
+
 ***
+
 __<h2>SCREENSHOTS</h2>__
 Time Table:
 
